@@ -1,0 +1,113 @@
+/* --- Завдання 1: Базова таблиця --- */
+.table {
+    border-collapse: collapse;
+    width: 500px;
+    font-family: sans-serif;
+    margin-bottom: 40px;
+}
+
+.table td, .table th {
+    border: 1px solid #6395ff;
+    padding: 5px 10px;
+    text-align: left;
+}
+
+.table thead {
+    background-color: #dae1f8;
+}
+
+.table tfoot {
+    background-color: #5776b1;
+    color: #fff;
+    text-align: right;
+}
+
+.table tfoot td {
+    text-align: right;
+}
+
+
+/* --- Завдання 2: Розклад занять --- */
+.schedule-table {
+    border-collapse: collapse;
+    width: 600px;
+    margin-bottom: 40px;
+    font-family: sans-serif;
+}
+
+.schedule-table th, .schedule-table td {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: center;
+}
+
+.schedule-table caption {
+    font-weight: bold;
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+
+/* --- Завдання 3: Повідомлення сервера --- */
+.server-table {
+    border-collapse: collapse;
+    width: 100%;
+    font-family: sans-serif;
+}
+
+.server-table caption {
+    font-size: 1.5em;
+    font-weight: bold;
+    text-align: left;
+    padding: 10px 0;
+    color: #333;
+}
+
+.server-table thead {
+    background-color: #4a86e8;
+    color: white;
+}
+
+.server-table th, .server-table td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+/* Колір "зебри" (чередування рядків) */
+.server-table tbody tr:nth-child(even) {
+    background-color: #e8f0fe;
+}
+.server-table tbody tr:nth-child(odd) {
+    background-color: #ffffff;
+}
+
+/* Зміна фону при наведенні курсора */
+.server-table tbody tr:hover {
+    background-color: #d2e3fc;
+    cursor: pointer;
+}
+
+/* Декоративні елементи для 3 завдання */
+.badge {
+    padding: 4px 10px;
+    border-radius: 12px;
+    color: white;
+    font-size: 0.9em;
+}
+.size-big { background-color: #4a86e8; }
+.size-small { background-color: #38761d; }
+.size-middle { background-color: #6fa8dc; }
+
+.circle-badge {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    line-height: 24px;
+    text-align: center;
+    border-radius: 50%;
+    color: white;
+}
+.prio-4 { background-color: #3c78d8; }
+.prio-3 { background-color: #38761d; }
+.prio-1 { background-color: #cc0000; }

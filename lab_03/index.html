@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Лабораторна 3 - Таблиці</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- ЗАВДАННЯ 1 -->
+    <h2>Завдання 1: Базова таблиця</h2>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>№</th>
+                <th>Ім'я</th>
+                <th>E-mail</th>
+                <th>Стать</th>
+                <th>Дата</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Дмитро</td>
+                <td>dmytro@gmail.com</td>
+                <td>Ч</td>
+                <td>21.11.2020</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Олександр</td>
+                <td>alex@gmail.com</td>
+                <td>Ч</td>
+                <td>23.11.2020</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Вікторія</td>
+                <td>vika@gmail.com</td>
+                <td>Ж</td>
+                <td>24.11.2020</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="5">Всього: 3</td>
+            </tr>
+        </tfoot>
+    </table>
+
+    <!-- ЗАВДАННЯ 2 -->
+    <h2>Завдання 2: Розклад занять (Понеділок)</h2>
+    <table class="schedule-table">
+        <caption>Розклад занять</caption>
+        <thead>
+            <tr>
+                <th>День тижня</th>
+                <th>Пара</th>
+                <th>Тиждень</th>
+                <th>Назва дисципліни, викладач</th>
+                <th>Ауд.</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td rowspan="5">ПОНЕДІЛОК</td>
+                <td>3</td>
+                <td>11</td>
+                <td colspan="2">Вільна пара</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td></td>
+                <td colspan="2"></td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>1, 11</td>
+                <td>Організація БД (Штокало)</td>
+                <td>315</td>
+            </tr>
+            <tr>
+                <td>6</td>
+                <td></td>
+                <td>БЖД (Брояк)</td>
+                <td>205в</td>
+            </tr>
+            <tr>
+                <td>7</td>
+                <td></td>
+                <td>Програмне забезпечення (Лісовий)</td>
+                <td>103</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!-- ЗАВДАННЯ 3 -->
+    <h2>Завдання 3: Повідомлення сервера</h2>
+    <table class="server-table">
+        <caption>Server Messages</caption>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Title</th>
+                <th>Category</th>
+                <th>Created at</th>
+                <th>Size</th>
+                <th>Priority</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>#1078</td>
+                <td>Allow emailing within the system<br><small>Updated at 22/01/2024</small></td>
+                <td>Development</td>
+                <td>January 22, 2024<br><small>10:15</small></td>
+                <td><span class="badge size-big">Big</span></td>
+                <td><span class="circle-badge prio-4">4</span></td>
+            </tr>
+            <tr>
+                <td>#2034</td>
+                <td>Allow emailing within the system<br><small>Updated at 21/01/2024</small></td>
+                <td>Development</td>
+                <td>January 21, 2024<br><small>13:30</small></td>
+                <td><span class="badge size-small">Small</span></td>
+                <td><span class="circle-badge prio-3">3</span></td>
+            </tr>
+            <tr>
+                <td>#2165</td>
+                <td>Allow emailing within the system<br><small>Updated at 20/01/2024</small></td>
+                <td>Development</td>
+                <td>January 20, 2024<br><small>16:00</small></td>
+                <td><span class="badge size-middle">Middle</span></td>
+                <td><span class="circle-badge prio-1">1</span></td>
+            </tr>
+        </tbody>
+    </table>
+
+</body>
+</html>
