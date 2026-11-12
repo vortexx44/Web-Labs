@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Завдання 1 - Фрукти</title>
+    <style>
+        /* Світлий фон у всього списку та внутрішні відступи */
+        ol.fruit-list {
+            background-color: #f6b5c3; 
+            padding: 20px; 
+            width: 300px;
+            list-style-position: inside; /* Маркери списку всередині блоку */
+            font-family: Arial, sans-serif;
+        }
+
+        /* Більш темний фон кожного елемента та відступи між ними */
+        ol.fruit-list li {
+            background-color: #c05c75;
+            color: white;
+            margin-bottom: 8px; /* Відступ знизу для розділення пунктів */
+            font-size: 18px;
+        }
+
+        /* Найтемніший фон тільки під текстом */
+        ol.fruit-list li span {
+            background-color: #9d3955;
+            display: inline-block;
+            padding: 10px 15px; /* Внутрішні відступи для тексту */
+            width: calc(100% - 60px); /* Розтягування фону тексту на доступну ширину */
+        }
+    </style>
+</head>
+<body>
+
+    <ol class="fruit-list">
+        <li><span>Apple</span></li>
+        <li><span>Orange</span></li>
+        <li><span>Pineapple</span></li>
+        <li><span>Pear</span></li>
+        <li><span>Cherry</span></li>
+    </ol>
+
+</body>
+</html>

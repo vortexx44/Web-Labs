@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Завдання 3 - To Do List</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        h2 {
+            margin-bottom: 10px;
+        }
+
+        /* Прибираємо стандартні маркери списку */
+        ul.todo-list {
+            list-style-type: none;
+            padding: 0;
+            width: 350px;
+            margin: 0;
+        }
+
+        /* Базові стилі для всіх пунктів списку */
+        ul.todo-list li {
+            padding: 12px 15px;
+            font-size: 18px;
+            display: flex;
+            align-items: center;
+        }
+
+        /* Блакитний фон для непарних елементів */
+        ul.todo-list li:nth-child(odd) {
+            background-color: #aed6e5;
+        }
+
+        /* Темніший блакитний фон для парних елементів */
+        ul.todo-list li:nth-child(even) {
+            background-color: #93c5d8;
+        }
+
+        /* Стилі для виконаних (відмічених) завдань */
+        ul.todo-list li.completed {
+            background-color: #e6e6e6; /* Сірий фон */
+            color: #555;
+            text-decoration: line-through; /* Закреслений текст */
+        }
+
+        /* Відступи для тексту завдання (щоб віддалити від чекбоксу) */
+        .task-text {
+            margin-left: 15px;
+            flex-grow: 1; /* Текст займає весь вільний простір */
+        }
+
+        /* Стиль для червоного хрестика */
+        .delete-btn {
+            color: #d9534f;
+            font-weight: bold;
+            font-size: 16px;
+            margin-left: 10px;
+        }
+
+        /* Збільшення розміру чекбоксів */
+        .chk-icon {
+            font-size: 22px;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>My To Do List</h2>
+    <ul class="todo-list">
+        <li><span class="chk-icon">&#9744;</span> <span class="task-text">Hit the gym</span> <span class="delete-btn">&times;</span></li>
+        <li><span class="chk-icon">&#9744;</span> <span class="task-text">Pay bills</span> <span class="delete-btn">&times;</span></li>
+        <li class="completed"><span class="chk-icon">&#9745;</span> <span class="task-text">Meet John</span> <span class="delete-btn">&times;</span></li>
+        <li class="completed"><span class="chk-icon">&#9745;</span> <span class="task-text">Buy eggs</span> <span class="delete-btn">&times;</span></li>
+        <li><span class="chk-icon">&#9744;</span> <span class="task-text">Read a book</span> <span class="delete-btn">&times;</span></li>
+        <li><span class="chk-icon">&#9744;</span> <span class="task-text">Organize office</span> <span class="delete-btn">&times;</span></li>
+        <li><span class="chk-icon">&#9744;</span> <span class="task-text">Eat dinner</span> <span class="delete-btn">&times;</span></li>
+        <li><span class="chk-icon">&#9744;</span> <span class="task-text">Buy apples</span> <span class="delete-btn">&times;</span></li>
+        <li><span class="chk-icon">&#9744;</span> <span class="task-text">Meet Georg</span> <span class="delete-btn">&times;</span></li>
+        <li class="completed"><span class="chk-icon">&#9745;</span> <span class="task-text">Feed the cat</span> <span class="delete-btn">&times;</span></li>
+        <li><span class="chk-icon">&#9744;</span> <span class="task-text">Write a letter</span> <span class="delete-btn">&times;</span></li>
+        <li><span class="chk-icon">&#9744;</span> <span class="task-text">Run 1 km</span> <span class="delete-btn">&times;</span></li>
+    </ul>
+
+</body>
+</html>
